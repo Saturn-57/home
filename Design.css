@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Major';
+    src: url('MajorMonoDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kumar';
+    src: url('KumarOneOutline-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zhi';
+    src: url('ZhiMangXing-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'federo';
+    src: url('Federo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    z-index: 0; 
+}
+
+#background-video {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: -70%;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+
+.container, .content {
+    position: static;
+    z-index: 1;
+    text-align: center;
+    padding-top: 20%;
+    min-height: 200vh;
+
+    font-family: 'Major', serif;
+    font-size: 30px;
+
+    color: #ffffff;
+
+    padding: 100px 20px;
+}
+
+ruby{
+    font-family: 'Zhi';
+    font-size: 50px;
+}
+
+section{
+    padding: 0 10px 0 10px;
+    max-width: 2048px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.major{
+    font-family: 'Major';
+}
+
+.main{
+    text-align: center;
+}
+
+.title{
+    font-size: 75px;
+    max-width: 8162px;
+}
+
+
+
+
+
+.bottom{
+    width= 100%;
+    height= 70%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.moving_small{
+    width: 1000px;
+    height: 250px;
+    position: relative;
+    animation: slide 25s linear infinite;
+}
+.moving_medium{
+    width: 850px;
+    height: 200px;
+    position: relative;
+    animation: slide 33s linear infinite;
+}
+@keyframes slide {
+    from {left: -66%;}
+    to {left: 100%;}
+}
+@keyframes slide {
+    from {left: -66%;}
+    to {left: 100%;}
+}
+
+.big{
+    font-size: 33px;
+}
+
+.lateral_canhoto{
+    text-align: left;
+    width: 700px;
+    margin: 20px;
+    padding-left: 25px;
+    font-size: 20px;
+    font-family: 'Major';
+    float: left;
+    h3{
+        font-size: 35px;
+        font-family: 'federo';
+    }
+}
+.lateral_destro{
+    width: 50px;
+    margin: 20px;
+    text-align: right;
+    padding-right: 25%;
+    padding-top: 5%;
+    font-size: 25px;
+    font-family: 'Major';
+    float: right;
+}
+.rotate{
+    width: 250px;
+    height: 250px;
+    animation: spin 20s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.botao{
+    background-color: #3E3F5B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.botao:hover {
+    background-color: #5d5e88;
+}
+
+
+.gradient{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+    z-index: -1;
+}
+.credits{
+    color: #5d5e88;
+    font-family: 'Kumar';
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 25%);
+}
